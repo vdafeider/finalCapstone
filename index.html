@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>City Informer</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>
+
+  <body style="text-align:center">
+    <h1>API, Async Functions</h1>
+    <h5>- 2 sec delay to get the result after "Get Details" button pressed - server limits -</h5>
+    <div>
+      <label for="city" >Enter the city name (South Africa area only) *:</label>
+      <input type="text" id="city" name="city" required>
+      <div class="submit">
+        <button type="button" onClick="getIdByCityName(document.getElementById('city').value)">Get Details</button>  
+      </div> <hr>
+      <div id="results"></div>
+    </div>
+    <script type='text/javascript' src='cityscript.js'></script>
+
+  </body>
+
+</html>
